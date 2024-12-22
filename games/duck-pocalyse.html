@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Duck-Pocalypse</title>
+    <link rel="icon" type="image/png" href="../FIA.png">
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+        }
+
+        header {
+      width: 100%;
+      background-color: #05181a;
+      padding: 0;
+      margin: 0;
+      position: fixed; /* Keep the header at the top */
+      z-index: 10;
+      height: 60px; /* Define the height of the header */
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+        nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+      padding: 0 20px;
+      box-sizing: border-box;
+    }
+
+    .logo {
+      font-size: 1.8rem;
+      font-weight: bold;
+      color: #b84294;
+      text-decoration: none;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .nav-links {
+      list-style: none;
+      display: flex;
+      gap: 1.5rem;
+    }
+
+    .nav-links li a {
+      font-family: Arial, sans-serif;
+      text-decoration: none;
+      color: #fff;
+      font-size: 1.1rem;
+      position: relative;
+      transition: color 0.3s ease;
+    }
+
+    .nav-links li a:hover {
+      color: #b84294;
+    }
+
+    .nav-links li a::after {
+      content: '';
+      position: absolute;
+      width: 0;
+      height: 2px;
+      background: #b84294;
+      left: 0;
+      bottom: -4px;
+      transition: width 0.3s ease;
+    }
+
+    .nav-links li a:hover::after {
+      width: 100%;
+    }
+
+        .main-container {
+            display: flex;
+            flex: 1;
+            overflow: hidden;
+        }
+        .game-container {
+            flex: 3;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+            background-color: plum;
+            position: relative;
+        }
+        .game {
+            width: 100%;
+            height: 100%;
+            
+            position: absolute;
+            left: 505px;
+            top: 150px;
+        }
+        .right-image {
+            position: absolute;
+            top: 55%;
+            left: 0;
+            transform: translateY(-50%);
+            height: 100vh; 
+            width: 30%;
+        }
+        .sidebar {
+            flex-shrink: 1.5;
+
+            background-color: plum;
+            padding: 10px;
+            padding-top: 70px;
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+        }
+        .image-container {
+            position: relative;
+            overflow: hidden;
+            width: 100%;
+            max-width: 280px;
+            aspect-ratio: 4 / 3;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+        }
+        .image-container:hover {
+            transform: scale(1.05);
+        }
+        .image-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+        .image-text {
+            position: absolute;
+            bottom: -30%;
+            left: 4.4%;
+            width: 91%;
+            background: rgba(0, 0, 0, 0.7);
+            color: #fff;
+            text-align: center;
+            padding: 16px 0;
+            font-size: 18px;
+            transition: bottom 0.3s ease;
+        }
+        .image-container:hover .image-text {
+            bottom: 0;
+        }
+        footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 0.001%;
+}
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+          <a href="../index.html" class="logo">FIA GAMEZ</a>
+          <ul class="nav-links">
+              <li><a href="../index.html">Home</a></li>
+              <li><a href="../explore.html">Explore</a></li>
+              <li><a href="../about.html">About</a></li>
+              <li><a href="../account.html">Account</a></li>
+          </ul>
+      </nav>
+      </header>
+
+    <div class="main-container">
+        <div class="game-container">
+            <div class="game">
+                <iframe id="tt" src="https://scratch.mit.edu/projects/1111761629/embed" allowtransparency="true" width="840" height="600"  frameborder="0" scrolling="no" allowfullscreen></iframe>
+            </div>
+            <img src="../pic2.jpg" alt="Right Image" class="right-image">
+        </div>
+        <div class="sidebar">
+            <div class="image-container" onclick="window.open('circle-in.html', '_self')">
+                <img src="../circle in.png" alt="Game 1">
+                <div class="image-text">Circle-In</div>
+            </div>
+            <div class="image-container" onclick="window.open('city run.html', '_self')">
+                <img src="../runcity.jpg" alt="Game 2">
+                <div class="image-text">City Run</div>
+            </div>
+            <div class="image-container" onclick="window.open('Dodge.html', '_self')">
+                <img src="../dodge.png" alt="Game 3">
+                <div class="image-text">Dodge</div>
+            </div>
+            <div class="image-container" onclick="window.open('flappy bird.html', '_self')">
+                <img src="../flappy bird.png" alt="Game 4">
+                <div class="image-text">Flappy Bird</div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>© 2024 The FIA GAMEZ | Game on! 🎮</p>
+    </footer>
+</body>
+</html>

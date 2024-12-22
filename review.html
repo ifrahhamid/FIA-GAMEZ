@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gaming Reviews</title>
+  <link rel="icon" type="image/png" href="FIA.png">
+  <style>
+    /* General Styling */
+    body {
+      font-family: 'Poppins', Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-image: url('wp.jpg');
+      background-size: cover;
+      background-attachment: fixed;
+      color: #333;
+    }
+
+    /* Header */
+    header {
+      background-color: #2a3f54;
+      color: #fff;
+      text-align: center;
+      padding: 20px;
+      font-size: 26px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    
+    /* Navigation */
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+      padding: 0 20px;
+      box-sizing: border-box;
+    }
+
+    .logo {
+      font-size: 1.8rem;
+      font-weight: bold;
+      color: #b84294;
+      text-decoration: none;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .nav-links {
+      list-style: none;
+      display: flex;
+      gap: 1.5rem;
+    }
+
+    .nav-links li a {
+      font-family: Arial, sans-serif;
+      text-decoration: none;
+      color: #fff;
+      font-size: 1.1rem;
+      position: relative;
+      transition: color 0.3s ease;
+    }
+
+    .nav-links li a:hover {
+      color: #b84294;
+    }
+
+    .nav-links li a::after {
+      content: '';
+      position: absolute;
+      width: 0;
+      height: 2px;
+      background: #b84294;
+      left: 0;
+      bottom: -4px;
+      transition: width 0.3s ease;
+    }
+
+    .nav-links li a:hover::after {
+      width: 100%;
+    }
+
+    /* Container */
+    .container {
+      width: 90%;
+      margin: 30px auto;
+      max-width: 1200px;
+    }
+
+    /* Review Card Styling */
+    .review:nth-child(1) { background-color: #fdf2f8; } /* Soft Pink */
+    .review:nth-child(2) { background-color: #e6f7ff; } /* Light Sky Blue */
+    .review:nth-child(3) { background-color: #f2f6f9; } /* Light Grey */
+    .review:nth-child(4) { background-color: #fff5e6; } /* Light Peach */
+    .review:nth-child(5) { background-color: #ebcea4; } /* Light Brown */
+
+    .review {
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+      border-radius: 12px;
+      margin-bottom: 30px;
+      padding: 20px 25px;
+      overflow: hidden;
+      position: relative;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .review:hover {
+      transform: translateY(-10px); /* Lift effect */
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    }
+
+    /* Decorative Icons */
+    .review::before {
+      content: '🎮';
+      position: absolute;
+      top: 15px;
+      left: 15px;
+      font-size: 2rem; /* Emoji size */
+      line-height: 1; /* Fix cutoff issue */
+      display: inline-block;
+    }
+
+    .review:nth-child(even)::before {
+      content: '⭐'; /* Alternate icon */
+    }
+
+    /* Review Heading */
+    .review h2 {
+      font-size: 24px;
+      color: #2a3f54;
+      margin-bottom: 10px;
+      display: flex;
+      align-items: center; /* Center align heading and emoji */
+      gap: 10px;
+    }
+
+    /* Game Details */
+    .game-details {
+      font-style: italic;
+      color: #555;
+      margin-bottom: 15px;
+    }
+
+    .game-details span {
+      display: inline-block;
+      margin-right: 15px;
+      color: #666;
+    }
+
+    /* Score Styling */
+    .score {
+      color: #e74c3c; /* Red for scores */
+      font-weight: bold;
+    }
+
+    /* Review Text */
+    .review p {
+      line-height: 1.8;
+      font-size: 16px;
+      color: #444;
+      margin-top: 15px;
+    }
+
+    footer {
+    width: 100%;
+    padding: 0.0001px;
+    background-color: #2a3f54;; 
+    color: white;         
+    text-align: center;    
+    position: fixed;        
+    bottom: 0;              
+    left: 0;
+}
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+        <a href="index.html" class="logo">FIA GAMEZ</a>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="explore.html">Explore</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="account.html">Account</a></li>
+        </ul>
+    </nav>
+    <h1>Latest Game Reviews</h1>
+</header>
+
+
+
+<div class="container">
+
+  <!-- Review 1 -->
+  <div class="review">
+    <h2>Shadow Realm: Rise of the Void</h2>
+    <p class="game-details">
+      <span>Platform: PlayStation 5, Xbox Series X, PC</span>
+      <span class="score">Score: 8.5/10</span>
+    </p>
+    <p><strong>Review:</strong> <em>Shadow Realm: Rise of the Void</em> is an action-packed RPG that blends fast-paced combat with a deeply atmospheric narrative. The game’s standout feature is its fluid combat system, creating a satisfying rhythm of destruction...</p>
+  </div>
+
+  <!-- Review 2 -->
+  <div class="review">
+    <h2>Pixel Gardens</h2>
+    <p class="game-details">
+      <span>Platform: PC, Nintendo Switch, PlayStation 4</span>
+      <span class="score">Score: 9/10</span>
+    </p>
+    <p><strong>Review:</strong> <em>Pixel Gardens</em> is an indie gem that blends farming simulation with soothing puzzle mechanics. Its visuals and music offer a serene experience, perfect for a peaceful escape...</p>
+  </div>
+
+  <!-- Review 3 -->
+  <div class="review">
+    <h2>Empire of Shadows</h2>
+    <p class="game-details">
+      <span>Platform: PC, Xbox Series X</span>
+      <span class="score">Score: 7/10</span>
+    </p>
+    <p><strong>Review:</strong> <em>Empire of Shadows</em> offers an ambitious take on grand strategy but struggles with clunky controls and steep learning curves. Its depth is rewarding but may not be for everyone...</p>
+  </div>
+
+  <!-- Review 4 -->
+  <div class="review">
+    <h2>Ultimate Soccer League 2024</h2>
+    <p class="game-details">
+      <span>Platform: PlayStation 5, Xbox Series X, PC</span>
+      <span class="score">Score: 7.5/10</span>
+    </p>
+    <p><strong>Review:</strong> <em>Ultimate Soccer League 2024</em> continues to shine with smooth gameplay and AI improvements but still struggles with repetitive modes and microtransactions...</p>
+  </div>
+
+  <!-- Review 5 -->
+  <div class="review">
+    <h2>The Haunting of Ashford House</h2>
+    <p class="game-details">
+      <span>Platform: PC, PlayStation 5, Xbox Series X</span>
+      <span class="score">Score: 9/10</span>
+    </p>
+    <p><strong>Review:</strong> <em>The Haunting of Ashford House</em> is a chilling psychological horror that excels in atmosphere and narrative. A must-play for fans of story-driven horror...</p>
+  </div>
+
+</div>
+
+<footer>
+  <p>&copy; 2024 Gaming Reviews. All rights reserved.</p>
+</footer>
+
+</body>
+</html>

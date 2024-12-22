@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gaming Tips</title>
+  <link rel="icon" type="image/png" href="FIA.png">
+  <style>
+  body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right, #e0f7fa, #c4f0f7);
+    background-image: url('wp.jpg');
+    color: #333;
+  }
+
+  header {
+    background-color: #00796b;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 28px;
+    border-bottom: 4px solid #004d40;
+  }
+
+/* Navigation */
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+      padding: 0 10px;
+      box-sizing: border-box;
+    }
+
+    .logo {
+      font-size: 1.8rem;
+      font-weight: bold;
+      color: #b84294;
+      text-decoration: none;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .nav-links {
+      list-style: none;
+      display: flex;
+      gap: 1.5rem;
+    }
+
+    .nav-links li a {
+      font-family: Arial, sans-serif;
+      text-decoration: none;
+      color: #fff;
+      font-size: 1.1rem;
+      position: relative;
+      transition: color 0.3s ease;
+    }
+
+    .nav-links li a:hover {
+      color: #b84294;
+    }
+
+    .nav-links li a::after {
+      content: '';
+      position: absolute;
+      width: 0;
+      height: 2px;
+      background: #b84294;
+      left: 0;
+      bottom: -4px;
+      transition: width 0.3s ease;
+    }
+
+    .nav-links li a:hover::after {
+      width: 100%;
+    }
+
+  .container {
+    width: 90%;
+    margin: 20px auto;
+    max-width: 1200px;
+  }
+
+  .section {
+    background-color: #ffffff;
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  }
+
+  .section h2 {
+    font-size: 26px;
+    color: #00796b;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #b2dfdb;
+    padding-bottom: 10px;
+  }
+
+  .tip {
+    font-size: 18px;
+    margin-bottom: 15px;
+    line-height: 1.8;
+  }
+
+  .tip span {
+    font-weight: bold;
+    color: #ff5722;
+  }
+
+    footer {
+    width: 100%;
+    padding: 0.0001px;
+    background-color: #00796b; 
+    border-top: 4px solid #004d40;
+    color: white;         
+    text-align: center;    
+    position: fixed;        
+    bottom: 0;              
+    left: 0;
+}
+
+  /* Hover effects */
+  .section:hover {
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.2);
+  }
+
+  .tip:hover {
+    color: #009688;
+  }
+
+  .tip span:hover {
+    color: #ffcc80;
+  }
+
+  /* Responsive adjustments */
+  @media screen and (max-width: 768px) {
+    .section {
+      margin: 10px;
+      padding: 15px;
+    }
+
+    .tip {
+      font-size: 16px;
+    }
+
+    header {
+      padding: 15px;
+    }
+  }
+
+  @media screen and (max-width: 480px) {
+    .section {
+      margin: 5px;
+      padding: 10px;
+    }
+
+    .tip {
+      font-size: 14px;
+    }
+  }
+</style>
+</head>
+<body>
+<header>
+      <nav>
+        <a href="index.html" class="logo">FIA GAMEZ</a>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="explore.html">Explore</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="account.html">Account</a></li>
+        </ul>
+    </nav>
+    <h1>Gaming Tips & Tricks</h1>
+    </header>
+
+<div class="container">
+  <!-- General Gaming Tips Section -->
+  <div class="section">
+    <h2>🎮 General Gaming Tips</h2>
+    <div class="tip">
+      <span>1. Adjust Sensitivity Settings:</span>
+      <p>Fine-tune your mouse, controller, or touch sensitivity for better precision.</p>
+    </div>
+    <div class="tip">
+      <span>2. Know Your Controls:</span>
+      <p>Spend time learning key bindings or button configurations for quicker reactions.</p>
+    </div>
+    <div class="tip">
+      <span>3. Warm-Up Before Playing:</span>
+      <p>Play a few practice rounds or tutorials to improve your reflexes before serious games.</p>
+    </div>
+    <div class="tip">
+      <span>4. Optimize Graphics Settings:</span>
+      <p>Lower unnecessary graphics settings for better frame rates and smoother gameplay.</p>
+    </div>
+    <div class="tip">
+      <span>5. Play With Headphones:</span>
+      <p>Use quality headphones to hear game sounds like footsteps, gunshots, or ambient clues.</p>
+    </div>
+  </div>
+
+  <!-- Time Management Tips Section -->
+  <div class="section">
+    <h2>⏳ Time Management Tips</h2>
+    <div class="tip">
+      <span>1. Take Regular Breaks:</span>
+      <p>A 5-minute break every hour can improve focus and prevent fatigue.</p>
+    </div>
+    <div class="tip">
+      <span>2. Set Gaming Goals:</span>
+      <p>Decide what you want to achieve in each session, like leveling up or unlocking items.</p>
+    </div>
+    <div class="tip">
+      <span>3. Track Playtime:</span>
+      <p>Use tools or timers to avoid overplaying and burning out.</p>
+    </div>
+  </div>
+
+  <!-- FPS Tips Section -->
+  <div class="section">
+    <h2>🕹️ First-Person Shooter (FPS) Tips</h2>
+    <div class="tip">
+      <span>1. Master Crosshair Placement:</span>
+      <p>Keep your crosshair at head height for faster eliminations.</p>
+    </div>
+    <div class="tip">
+      <span>2. Learn Map Layouts:</span>
+      <p>Understand chokepoints, hiding spots, and respawn locations to gain an advantage.</p>
+    </div>
+    <div class="tip">
+      <span>3. Aim Training:</span>
+      <p>Practice using aim training tools like Aim Lab or Kovaak's.</p>
+    </div>
+    <div class="tip">
+      <span>4. Use Cover Smartly:</span>
+      <p>Always position yourself near cover to minimize enemy visibility.</p>
+    </div>
+    <div class="tip">
+      <span>5. Stay Calm Under Pressure:</span>
+      <p>In intense situations, focus on accuracy rather than spamming shots.</p>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <p>&copy; 2024 Gaming Tips. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
